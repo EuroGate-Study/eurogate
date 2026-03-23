@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーロゲート | 圧倒的なキャリアから逆算する欧州大学進学</title>
+    
+    <!-- 1. ファビコンの追加 -->
+    <link rel="icon" href="images/logo-symbol.png">
+    
+    <!-- Google Fonts: Noto Sans JP (本文用) & Noto Serif JP (見出し・ロゴ用) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome (LINEアイコン用) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Noto Serif JP"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#FAFAFA', // よりクリーンな白背景
+                            navy: '#1B2A47',  // 指定の深いネイビー（重厚感・信頼）
+                            gold: '#BFA162',  // 調整したゴールド（上品なアクセント）
+                            text: '#2D3748',  // 引き締まったダークグレー
+                        },
+                        line: '#06C755' // LINE公式ブランドカラー
+                    },
+                    lineHeight: {
+                        'loose-text': '1.9', // 行間をさらに広げて可読性と高級感をアップ
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #2D3748;
+            background-color: #ffffff;
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-brand-text">
+
+    <!-- 0. ヘッダー (Sticky) -->
+    <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 md:px-5 py-2 md:py-3 flex justify-between items-center gap-2 md:gap-4">
+            <!-- 1. ヘッダーのロゴ構造変更（アイコンとテキストの横並び） -->
+            <a href="#" class="flex items-center gap-2 transition-transform duration-200 hover:opacity-80 min-w-0">
+                <!-- フィルターを削除し、ロゴ本来の黄色とネイビーを活かす -->
+                <img src="images/logo-symbol.png" alt="EUROGATE Logo" class="h-8 md:h-12 w-auto object-contain flex-shrink-0">
+                <!-- 白背景に合わせてテキストをネイビーに変更、影も削除 -->
+                <span class="font-serif font-black text-xl md:text-2xl tracking-[0.1em] md:tracking-[0.2em] text-brand-navy truncate">EUROGATE</span>
+            </a>
+            <!-- LINE相談ボタン（スマホで重ならないようサイズと余白を最適化） -->
+            <a href="#" class="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-line text-white text-[11px] sm:text-sm font-bold px-3 py-2 md:px-5 md:py-3 rounded-md hover:bg-[#05b34c] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-300 flex-shrink-0">
+                <i class="fa-brands fa-line text-sm md:text-lg"></i> <span class="hidden sm:inline">無料相談</span><span class="sm:hidden">相談</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1 & 2. ファーストビュー (Heroセクション) - 背景画像の読み込みとフィルター -->
+        <section class="relative pt-32 pb-24 md:pt-64 md:pb-56 px-5 text-center flex items-center justify-center min-h-[85vh] md:min-h-[95vh] bg-cover bg-center" style="background-image: url('images/hero-bg.jpg');">
+            
+            <!-- ネイビー（#1B2A47）の不透明度70%のフィルター -->
+            <div class="absolute inset-0 bg-[#1B2A47] opacity-70"></div>
+            
+            <div class="max-w-5xl mx-auto relative z-10 fade-in-up mt-8">
+                <!-- 装飾ライン -->
+                <div class="w-16 h-1 bg-brand-gold mx-auto mb-8"></div>
+                
+                <h1 class="font-serif font-bold text-3xl md:text-5xl lg:text-6xl text-white leading-[1.6] md:leading-[1.5] mb-8 md:mb-12 tracking-wider drop-shadow-2xl">
+                    ヨーロッパ留学で<br class="hidden md:block">
+                    圧倒的な成長と最強のキャリアを<br class="hidden md:block">
+                    手に入れる。
+                </h1>
+                
+                <p class="text-white/90 font-medium text-base md:text-xl tracking-widest mb-12 md:mb-16 drop-shadow-md">
+                    欧州大学進学・キャリア構築サポート
+                </p>
+
+                <div>
+                    <a href="#" class="inline-flex items-center justify-center gap-3 bg-line text-white font-bold text-base md:text-xl px-10 py-5 md:px-14 md:py-6 rounded-full shadow-[0_10px_30px_rgba(6,199,85,0.4)] hover:shadow-[0_15px_40px_rgba(6,199,85,0.6)] hover:bg-[#05b34c] hover:-translate-y-1 transition-all duration-300">
+                        <i class="fa-brands fa-line text-2xl md:text-3xl"></i> まずはLINEで無料相談
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 直面する現実と解決策 (Conceptセクション) -->
+        <section class="bg-white py-32 md:py-48 px-5">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 md:mb-16">
+                    <span class="text-brand-gold font-bold tracking-widest text-sm md:text-base mb-4 md:mb-6 block uppercase">Concept</span>
+                    <h2 class="font-serif font-bold text-2xl md:text-4xl text-brand-navy leading-[1.6]">
+                        「ただの海外大卒」で終わるか、<br class="hidden lg:block">
+                        グローバルで勝ち抜く人材になるか。
+                    </h2>
+                </div>
+                
+                <div class="space-y-8 text-base md:text-lg leading-loose-text text-brand-text max-w-3xl mx-auto">
+                    <p class="font-medium text-brand-navy">
+                        ユーロゲートは「単なる手続き代行」ではありません。卒業後のキャリアから逆算し、欧州大進学を戦略的にデザインするコンサルティング・パートナーです。
+                    </p>
+                    <ul class="space-y-5 bg-brand-light p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                        <li class="flex items-start gap-4">
+                            <span class="text-brand-gold font-bold mt-1 text-lg md:text-xl">✔︎</span>
+                            <span class="font-bold text-brand-navy">「学費が安いから」という安易な妥協からの脱却</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-brand-gold font-bold mt-1 text-lg md:text-xl">✔︎</span>
+                            <span class="font-bold text-brand-navy">語学力だけで終わらない「世界のどこでも戦える力」の獲得</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-brand-gold font-bold mt-1 text-lg md:text-xl">✔︎</span>
+                            <span class="font-bold text-brand-navy">入学前から「ボスキャリ等の就活」を見据えた逆算型の進学戦略</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600">
+                        曖昧な理由で留学しても、渡航直後の過酷な環境や学業の壁にすぐに打ちのめされてしまいます。さらに、そこをなんとか卒業できたとしても、帰国後に待ち受けるのは厳しい就活の現実です。ユーロゲートは、その壁を共に越え、あなたを「選ばれる人材」へと引き上げます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 選ばれる理由 (Service / 3つの強みセクション) -->
+        <section class="bg-brand-light py-32 md:py-48 px-5 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20 md:mb-32">
+                    <span class="text-brand-gold font-bold tracking-widest text-sm md:text-base mb-4 md:mb-6 block uppercase">Reason</span>
+                    <h2 class="font-serif font-bold text-3xl md:text-5xl text-brand-navy">ユーロゲートが提供する3つの価値</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+                    <!-- 強み 1 -->
+                    <div class="bg-white rounded-xl shadow-[0_15px_50px_rgba(0,0,0,0.08)] hover:shadow-[0_30px_60px_rgba(27,42,71,0.15)] transition-all duration-500 overflow-hidden group border border-gray-100 flex flex-col">
+                        <div class="h-56 md:h-72 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600" alt="留学までの完全伴走" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-0 left-0 bg-brand-navy text-brand-gold font-serif font-bold text-2xl md:text-3xl px-6 py-3 shadow-lg rounded-br-xl">01</div>
+                        </div>
+                        <div class="p-10 md:p-12 flex-grow">
+                            <h3 class="font-serif font-bold text-2xl text-brand-navy mb-6 leading-relaxed border-b-2 border-brand-gold/30 pb-4">出願から渡航までの完全伴走</h3>
+                            <p class="text-brand-text leading-loose-text text-base md:text-lg">
+                                煩雑な書類準備、出願手続き、IELTS等スコアメイクの戦略立案から現地での生活立ち上げまでを網羅。渡航前の不安を完全に排除し、学業に集中できる土台を構築します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 強み 2 -->
+                    <div class="bg-white rounded-xl shadow-[0_15px_50px_rgba(0,0,0,0.08)] hover:shadow-[0_30px_60px_rgba(27,42,71,0.15)] transition-all duration-500 overflow-hidden group border border-gray-100 flex flex-col">
+                        <div class="h-56 md:h-72 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600" alt="就活・キャリア戦略ナビ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-0 left-0 bg-brand-navy text-brand-gold font-serif font-bold text-2xl md:text-3xl px-6 py-3 shadow-lg rounded-br-xl">02</div>
+                        </div>
+                        <div class="p-10 md:p-12 flex-grow">
+                            <h3 class="font-serif font-bold text-2xl text-brand-navy mb-6 leading-relaxed border-b-2 border-brand-gold/30 pb-4">就活・キャリア戦略ナビ</h3>
+                            <p class="text-brand-text leading-loose-text text-base md:text-lg">
+                                卒業はゴールではありません。入学前の段階から「卒業後のキャリア（ボストンキャリアフォーラム等のトップ就活）」を見据え、確実に勝ち抜くためのロードマップを提供します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 強み 3 -->
+                    <div class="bg-white rounded-xl shadow-[0_15px_50px_rgba(0,0,0,0.08)] hover:shadow-[0_30px_60px_rgba(27,42,71,0.15)] transition-all duration-500 overflow-hidden group border border-gray-100 flex flex-col">
+                        <div class="h-56 md:h-72 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=600" alt="有給アンバサダー制度" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-0 left-0 bg-brand-navy text-brand-gold font-serif font-bold text-2xl md:text-3xl px-6 py-3 shadow-lg rounded-br-xl">03</div>
+                        </div>
+                        <div class="p-10 md:p-12 flex-grow">
+                            <h3 class="font-serif font-bold text-2xl text-brand-navy mb-6 leading-relaxed border-b-2 border-brand-gold/30 pb-4">実績を作る有給アンバサダー</h3>
+                            <p class="text-brand-text leading-loose-text text-base md:text-lg">
+                                留学中のリアルな生活や学びを発信することを仕事にする独自制度。学生時代からマーケティングの実績を積みながら、報酬（インセンティブ）を得ることが可能です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 対応エリア (Areaセクション) -->
+        <section class="bg-white py-32 md:py-48 px-5">
+            <div class="max-w-6xl mx-auto text-center">
+                <span class="text-brand-gold font-bold tracking-widest text-sm md:text-base mb-4 md:mb-6 block uppercase">Area</span>
+                <h2 class="font-serif font-bold text-3xl md:text-4xl text-brand-navy leading-[1.6] mb-8 md:mb-12">
+                    専門とするサポート対象国
+                </h2>
+                <p class="text-brand-text text-base md:text-xl leading-loose-text max-w-4xl mx-auto mb-16 md:mb-20">
+                    学費を抑えながら、英語で学位が取得できる「非英語圏ヨーロッパ」のトップ大学進学を専門としています。
+                </p>
+                
+                <!-- 国名リスト (カード型バッジ) -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-16 md:mb-20">
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">ドイツ</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">ハンガリー</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">ポーランド</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">チェコ</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">エストニア</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">リトアニア</span>
+                    </div>
+                    <div class="bg-brand-light border border-gray-200 w-[45%] md:w-48 py-5 md:py-7 rounded-lg shadow-sm hover:shadow-xl hover:border-brand-gold hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                        <span class="font-bold text-brand-navy tracking-widest text-base md:text-xl group-hover:text-brand-gold transition-colors">スロバキア</span>
+                    </div>
+                </div>
+
+                <!-- 注記テキスト (トーンダウンし上品に) -->
+                <div class="bg-[#F8F9FA] border border-[#DDDDDD] rounded-xl p-6 md:p-10 max-w-4xl mx-auto">
+                    <p class="text-sm md:text-lg leading-loose-text text-center text-[#555555]">
+                        <span class="font-bold mr-2 text-brand-navy">※</span>
+                        上記以外の非英語圏ヨーロッパについても、ご希望や状況に合わせて【要相談】にて対応可能です。まずは無料相談で、あなたの現状と目標をお聞かせください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 代表メッセージ (About Usセクション) -->
+        <section class="bg-brand-navy text-white py-32 md:py-48 px-5 overflow-hidden">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center lg:items-start">
+                    
+                    <!-- プロフィール画像＆名前エリア (左側) -->
+                    <div class="flex flex-col items-center flex-shrink-0 relative pt-4 lg:pt-0">
+                        <div class="relative">
+                            <!-- 装飾用の円 -->
+                            <div class="absolute w-48 h-48 md:w-56 md:h-56 rounded-full border border-brand-gold/30 -top-4 -left-4 md:-top-4 md:-left-4"></div>
+                            <!-- 3. プロフィール画像の調整 (丸型・ゴールド枠線・サイズ調整) -->
+                            <img src="images/profile.jpg" alt="佐藤 航" class="relative z-10 w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[3px] border-brand-gold" />
+                        </div>
+                        <!-- 代表名 -->
+                        <div class="mt-8 md:mt-10 relative z-10 text-center">
+                            <p class="font-serif font-bold text-xl md:text-2xl tracking-widest text-brand-gold mb-2">ユーロゲート 代表</p>
+                            <p class="font-bold text-lg md:text-xl tracking-wider text-white">佐藤 航</p>
+                        </div>
+                    </div>
+                    
+                    <!-- メッセージテキストエリア (右側) -->
+                    <div class="flex-grow w-full text-center lg:text-left mt-8 lg:mt-0">
+                        <span class="text-brand-gold font-bold tracking-widest text-sm md:text-base mb-4 md:mb-6 block uppercase">Message</span>
+                        <h2 class="font-serif font-bold text-2xl md:text-4xl leading-[1.6] mb-10 md:mb-14 text-white">
+                            なぜ「目的意識」と「キャリア設計」にこだわるのか。
+                        </h2>
+                        
+                        <div class="space-y-8 md:space-y-10 text-base md:text-lg lg:text-xl leading-loose-text text-gray-200 font-light text-left">
+                            <p>
+                                私自身、過去にポーランドのワルシャワ大学（ファウンデーションコース）へ進学したものの、結局「自分が本当にやりたいこと」や「何を学びたいのか」がわかりませんでした。
+                            </p>
+                            <p>
+                                このまま「なんとなく」で勉強を続けるのはどうなんだろうと悩み、目標を持てないまま、結果的にドロップアウト（挫折）という道を辿りました。
+                            </p>
+                            <p>
+                                だからこそ、私は「とりあえず海外に行く」ことを決してお勧めしません。
+                            </p>
+                            <p>
+                                明確な目的意識と、卒業後を見据えたキャリア設計がなければ、異文化の壁や学業のプレッシャーに直面したとき、必ず心が折れてしまうというリアルな現実を知っているからです。
+                            </p>
+                            <p>
+                                「自分のキャリアを真剣に考え、ヨーロッパという舞台で圧倒的に成長したい」<br>
+                                そんな覚悟を持つあなたに対して、私は過去の自分のような失敗をさせないよう全力で伴走し、最強のキャリア構築をサポートします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. フッター (Contactセクション) -->
+        <section class="bg-brand-light py-32 md:py-48 px-5 text-center relative overflow-hidden border-t border-gray-200">
+            <!-- 背景装飾 -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] md:w-[1000px] md:h-[1000px] bg-brand-gold/5 rounded-full blur-3xl -z-10"></div>
+            
+            <div class="max-w-4xl mx-auto relative z-10">
+                <span class="text-brand-gold font-bold tracking-widest text-sm md:text-base mb-4 md:mb-6 block uppercase">Contact</span>
+                <h2 class="font-serif font-bold text-3xl md:text-5xl text-brand-navy leading-[1.6] mb-12 md:mb-16">
+                    圧倒的なキャリアへの第一歩を、<br class="hidden md:block">ここから。
+                </h2>
+                
+                <a href="#" class="inline-flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 bg-line text-white font-bold text-lg md:text-2xl px-10 py-6 md:px-20 md:py-8 rounded-full shadow-[0_15px_40px_rgba(6,199,85,0.3)] hover:shadow-[0_25px_50px_rgba(6,199,85,0.5)] hover:bg-[#05b34c] hover:-translate-y-2 transition-all duration-300 mb-14 md:mb-20">
+                    <span class="flex items-center gap-3"><i class="fa-brands fa-line text-3xl md:text-4xl"></i> まずはLINEで</span>
+                    <span>無料相談に申し込む</span>
+                </a>
+                
+                <p class="text-base md:text-xl text-brand-navy font-medium max-w-2xl mx-auto leading-loose-text">
+                    現状の学力や語学力は問いません。<br>
+                    「海外で挑戦し、人生を変えたい」という本気の思いをお持ちの方は、ぜひ一度お話ししましょう。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター最下部 -->
+    <footer class="bg-brand-navy py-10 text-center">
+        <!-- 4. フッターのロゴ復活 -->
+        <div class="font-serif font-black text-2xl md:text-3xl tracking-[0.2em] text-white opacity-90 mb-4">EUROGATE</div>
+        <p class="text-xs md:text-sm text-white/40 tracking-wider">&copy; ユーロゲート. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
